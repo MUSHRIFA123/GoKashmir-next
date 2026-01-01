@@ -1,0 +1,18 @@
+User-agent: AhrefsBot
+User-agent: BLEXBot
+User-agent: Cliqzbot
+User-agent: dotbot
+User-agent: MJ12bot
+User-agent: Photon
+User-agent: Scrapy
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: *
+Disallow: /about
+Disallow: /api/*
+Disallow: /contact
+Disallow: /dmca
+Disallow: /privacy
+Disallow: /terms
+Allow: /

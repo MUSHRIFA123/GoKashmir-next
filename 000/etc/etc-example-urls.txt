@@ -1,0 +1,14 @@
+
+"www.vistbangalore.in/things-to-do/shopping/shoppping-malls"
+
+"www.vistbangalore.in/things-to-do/shopping/best-shopping-malls-for-kids" 
+
+
+"/blog-contents/visitbangalore.in/things-to-do/shopping/best-shopping-malls-for-kids.md" 
+
+
+
+Navbar class changed
+                className1="logo z-50 w-[90px] md:w-[101px] lg:w-[122px] xl:w-[138px]"
+
+

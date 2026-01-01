@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-figtree: 'Figtree', -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --font-poppins: 'Poppins', -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-figtree);
+}
+
+p, li, body {
+  font-family: var(--font-poppins);
+}
+
+@layer base {
+  h1 {
+    @apply: bg-gradient-to-r from-red-600 via-pink-600 to-red-700 inline-block text-transparent bg-clip-text;
+  }
+  p a {
+    @apply text-red-600 font-medium no-underline;
+  }
+
+  p a:hover {
+    @apply underline;
+  }
+}

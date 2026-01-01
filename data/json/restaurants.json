@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Rogan Josh",
+    "category": "Kashmiri Cuisine",
+    "description": "A signature slow-cooked lamb curry famous for its vibrant red color derived from Kashmiri chilies and its rich, aromatic flavor enhanced by yogurt and traditional spices.",
+    "image": "/img/restaurants/kashmiri-cuisine/rogan-josh.jpg"  },
+  {
+    "id": 2,
+    "name": "Yakhni",
+    "category": "Kashmiri Cuisine",
+    "description": "A fragrant and mild curry made with tender mutton cooked in a yogurt-based gravy flavored with fennel seeds, dry ginger, and subtle spices.",
+    "image": "/img/restaurants/kashmiri-cuisine/yakhni.jpg"
+    },
+  {
+    "id": 3,
+    "name": "Dum Aloo",
+    "category": "Kashmiri Cuisine",
+    "description": "Baby potatoes that are deep-fried and then simmered in a spicy, tangy yogurt gravy, creating a comforting and flavorful vegetarian dish.",
+    "image": "/img/restaurants/kashmiri-cuisine/dum-aloo.jpg"
+    },
+  {
+    "id": 4,
+    "name": "Gushtaba",
+    "category": "Kashmiri Cuisine",
+    "description": "Large, soft mutton meatballs cooked in a creamy yogurt-based sauce, traditionally served as the final and most prestigious dish of the Kashmiri Wazwan feast.",
+    "image": "/img/restaurants/kashmiri-cuisine/gushtaba.jpg"
+    },
+  {
+    "id": 5,
+    "name": "Modur Pulao",
+    "category": "Kashmiri Cuisine",
+    "description": "A sweet and festive rice preparation cooked with saffron, milk, sugar, ghee, and dry fruits, often served during celebrations and special occasions.",
+    "image": "/img/restaurants/kashmiri-cuisine/modur-pulao.jpg"
+    },
+  {
+    "id": 6,
+    "name": "Kahwa",
+    "category": "Kashmiri Cuisine",
+    "description": "A traditional aromatic green tea infused with saffron, cardamom, and cinnamon, garnished with almonds, and commonly served as a welcome drink in Kashmir.",
+    "image": "/img/restaurants/kashmiri-cuisine/kahwa.jpg"
+    },
+
+  {
+    "id": 7,
+    "name": "Top Cozy Cafes in Kashmir",
+    "category": "Cafes",
+    "description": "Discover the best cafes in Kashmir offering cozy atmospheres, hot beverages, and delicious snacks.",
+    "image": "/img/restaurants/cafes/cozy-cafes.jpg"
+    },
+  {
+    "id": 8,
+    "name": "Unique Themed Cafes in Kashmir",
+    "category": "Cafes",
+    "description": "Explore the most uniquely themed cafes in Kashmir for a fun and memorable cafe experience.",
+    "image": "/img/restaurants/cafes/themed-cafes.jpg"
+    },
+  {
+    "id": 9,
+    "name": "Best Literary Cafes in Kashmir",
+    "category": "Cafes",
+    "description": "Perfect for book enthusiasts, these cafes combine quiet spaces with great coffee and snacks.",
+    "image": "/img/restaurants/cafes/literary-cafes.jpg"
+    },
+  {
+    "id": 10,
+    "name": "Modern Cafes in Kashmir",
+    "category": "Cafes",
+    "description": "Enjoy a modern cafe vibe in Kashmir, featuring pizzas, Italian dishes, and classic cafe favorites.",
+    "image": "/img/restaurants/cafes/modern-cafes.jpg"
+    },
+  {
+    "id": 11,
+    "name": "Indian and Italian Flavors cafes in kashmir",
+    "category": "Cafes",
+    "description": "Savor the unique blend of Indian and Italian cafe treats at the best spots in Kashmir.",
+    "image": "/img/restaurants/cafes/italian.jpg"
+    },
+  {
+    "id": 12,
+    "name": "Top Cafes for Coffee, Snacks in kashmir",
+    "category": "Cafes",
+    "description": "Enjoy the best cafes in Kashmir offering freshly brewed coffee, delicious snacks, and a cozy atmosphere perfect for relaxing or catching up with friends.",
+    "image": "/img/restaurants/cafes/coffee-snacks.jpg"
+    },
+  {
+    "id": 13,
+    "name": "Top Fine Dining Restaurants in Kashmir with Stunning Views",
+    "category": "Fine Dining",
+    "description": "Experience upscale dining in Kashmir with breathtaking views and exquisite cuisine.",
+    "image": "/img/restaurants/fine-dining/fine-dining.jpg"
+    },
+  {
+    "id": 14,
+    "name": "Best Fine Dining Spots in Srinagar for Authentic Kashmiri Wazwan",
+    "category": "Fine Dining",
+    "description": "Savor traditional Wazwan dishes in elegant settings at the top fine dining restaurants of Srinagar.",
+    "image": "/img/restaurants/fine-dining/fine-dining-spots in-srinagar.jpg"
+    },
+  {
+    "id": 15,
+    "name": "Luxury Dining Experiences in Kashmir Near Dal Lake",
+    "category": "Fine Dining",
+    "description": "Indulge in luxury dining by Dal Lake, featuring local delicacies and international cuisines.",
+    "image": "/img/restaurants/fine-dining/luxury-dining.jpg"
+    },
+  {
+    "id": 16,
+    "name": "Renowned Restaurants in Kashmir for Fine Dining Lovers",
+    "category": "Fine Dining",
+    "description": "Explore Kashmir's most renowned fine dining restaurants known for exceptional service and authentic flavors.",
+    "image": "/img/restaurants/fine-dining/renowned-restaurants.jpg"
+    },
+  {
+    "id": 17,
+    "name": "High-End Dining in Srinagar: Best Culinary Experiences",
+    "category": "Fine Dining",
+    "description": "Discover high-end dining experiences in Srinagar that blend tradition, taste, and elegance.",
+    "image": "/img/restaurants/fine-dining/high-end-dining.jpg"
+    },
+  {
+    "id": 18,
+    "name": "Top Kashmir Fine Dining Restaurants for Special Occasions",
+    "category": "Fine Dining",
+    "description": "Celebrate special occasions with authentic Kashmiri cuisine in sophisticated fine dining settings.",
+    "image": "/img/restaurants/fine-dining/restaurants-for-special-occasions.jpg"
+    },
+  {
+    "id": 19,
+    "name": "Top Vegetarian Restaurants in Srinagar for Delicious Meals",
+    "category": "Vegetarian",
+    "description": "Explore the best vegetarian restaurants in Srinagar serving wholesome and flavorful Indian meals.",
+    "image": "/img/restaurants/vegetarian/vegetarian-restaurants.jpg"
+    },
+  {
+    "id": 20,
+    "name": "Best Vegetarian Dining Spots in Kashmir for Authentic Local Flavors",
+    "category": "Vegetarian",
+    "description": "Savor authentic vegetarian dishes in Kashmir at these highly-rated restaurants.",
+    "image": "/img/restaurants/vegetarian/authentic-local-flavors.jpg"
+    },
+  {
+    "id": 21,
+    "name": "Top Kashmiri Vegetarian Restaurants for Hearty Meals",
+    "category": "Vegetarian",
+    "description": "Find the best spots in Kashmir to enjoy hearty vegetarian meals with traditional flavors.",
+    "image": "/img/restaurants/vegetarian/vegetarian-restaurants-for-hearty-meals.jpg"
+    },
+  {
+    "id": 22,
+    "name": "Popular Vegetarian Eateries in Srinagar for Locals and Tourists",
+    "category": "Vegetarian",
+    "description": "These vegetarian eateries are loved by locals and tourists alike for consistent quality and taste.",
+    "image": "/img/restaurants/vegetarian/vegetarian-eateries.jpg"
+    },
+  {
+    "id": 23,
+    "name": "Top Vegetarian Restaurants in Kashmir with Cozy Ambiance",
+    "category": "Vegetarian",
+    "description": "Enjoy vegetarian meals in cozy and comfortable settings at these top restaurants in Kashmir.",
+    "image": "/img/restaurants/vegetarian/cozy-ambiance.jpg"
+    },
+  {
+    "id": 24,
+    "name": "Best Vegetarian Dining Experiences in pahalgam",
+    "category": "Vegetarian",
+    "description": "Experience the finest vegetarian dining in pahalgam with fresh ingredients and authentic Indian recipes.",
+    "image": "/img/restaurants/vegetarian/vegetarian-dining-pahalgam.jpg"
+    }
+]
