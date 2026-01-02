@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image';
+import Link from "next/link";
 
 const HomepageEvents = () => {
   return (
@@ -16,7 +16,7 @@ const HomepageEvents = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
             <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-              <a
+              <Link
                 href="/events/srinagar-winter-carnival-2025"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
               >
@@ -29,11 +29,11 @@ const HomepageEvents = () => {
                 <h3 className="z-10 text-xl font-small text-white absolute top-0 left-0 p-4 xs:text-xl md:text-xl">
                   Srinagar Winter Carnival
                 </h3>
-              </a>
+              </Link>
             </div>
 
             <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-              <a
+              <Link
                 href="/events/galdan-namchot-festival-ladakh"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4"
               >
@@ -46,9 +46,9 @@ const HomepageEvents = () => {
                 <h3 className="z-10 text-xl font-small text-white absolute top-0 left-0 p-4 xs:text-xl md:text-xl">
                   Galdan Namchot Festival
                 </h3>
-              </a>
+              </Link>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-                <a
+                <Link
                   href="/events/pahalgam-winter-festival-2025"
                   className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                 >
@@ -61,8 +61,8 @@ const HomepageEvents = () => {
                   <h3 className="z-10 text-xl font-small text-white absolute top-0 left-0 p-4 xs:text-xl md:text-xl">
                     Pahalgam Winter Festival
                   </h3>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/events/kashmir-christmas-celebrations-2025"
                   className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                 >
@@ -75,12 +75,12 @@ const HomepageEvents = () => {
                   <h3 className="z-10 text-xl font-small text-white absolute top-0 left-0 p-4 xs:text-xl md:text-xl">
                     Kashmir Christmas Celebrations
                   </h3>
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-              <a
+              <Link
                 href="/events/ladakhi-losar-new-year-2025"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
               >
@@ -93,7 +93,7 @@ const HomepageEvents = () => {
                 <h3 className="z-10 text-xl font-small text-white absolute top-0 left-0 p-4 xs:text-xl md:text-xl">
                   Ladakhi Losar (Tibetan New Year)
                 </h3>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
