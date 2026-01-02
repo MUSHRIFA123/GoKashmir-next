@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { connectDB } from "@/lib/mongodb";
 import News from "@/models/News";
 import { marked } from "marked";
-import Image from 'next/image';
+import Link from "next/link";
 
 export default async function NewsDetail({ params }) {
   const { slug } = params;
@@ -40,14 +40,14 @@ export default async function NewsDetail({ params }) {
             {newsItem.featuredImage.source && newsItem.featuredImage.sourceUrl ? (
               <p className="text-gray-400 text-xs mt-1 italic">
                 Image Credit:{" "}
-                <a
+                <Link
                   href={newsItem.featuredImage.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-indigo-600"
                 >
                   {newsItem.featuredImage.source}
-                </a>
+                </Link>
               </p>
             ) : newsItem.featuredImage.source ? (
               <p className="text-gray-400 text-xs mt-1 italic">
