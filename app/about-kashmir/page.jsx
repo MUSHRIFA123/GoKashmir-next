@@ -4,6 +4,7 @@ import Sponsers from "@/components/home/sponsers";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export default function AboutKashmir() {
   const [inView, setInView] = useState(false);

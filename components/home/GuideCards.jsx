@@ -1,4 +1,6 @@
 import React from "react";
+import Link from 'next/link'
+import Image from 'next/image';
 
 const GuideCards = () => {
   return (
@@ -21,7 +23,7 @@ const GuideCards = () => {
           <div className="grid gap-5 pt-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
 
             {/* Things to Do */}
-            <a href="/#" className="group flex justify-center [perspective:1000px]">
+            <Link href="/#" className="group flex justify-center [perspective:1000px]">
               <div className="relative lg:h-[400px] lg:w-64 sm:h-[365px] sm:w-60 h-[450px] w-[300px] rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 
                 <div className="absolute inset-0 rounded-xl [backface-visibility:hidden]">
@@ -51,10 +53,10 @@ const GuideCards = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Where to Stay */}
-            <a href="/#" className="group flex justify-center [perspective:1000px]">
+            <Link href="/#" className="group flex justify-center [perspective:1000px]">
               <div className="relative lg:h-[400px] lg:w-64 sm:h-[365px] sm:w-60 h-[450px] w-[300px] rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                 <div className="absolute inset-0 rounded-xl [backface-visibility:hidden]">
@@ -83,10 +85,10 @@ const GuideCards = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Travel Information */}
-            <a href="/#" className="group flex justify-center [perspective:1000px]">
+            <Link href="/#" className="group flex justify-center [perspective:1000px]">
               <div className="relative lg:h-[400px] lg:w-64 sm:h-[365px] sm:w-60 h-[450px] w-[300px] rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                 <div className="absolute inset-0 rounded-xl [backface-visibility:hidden]">
@@ -116,10 +118,10 @@ const GuideCards = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Honeymoon */}
-            <a href="/#" className="group flex justify-center [perspective:1000px]">
+            <Link href="/#" className="group flex justify-center [perspective:1000px]">
               <div className="relative lg:h-[400px] lg:w-64 sm:h-[365px] sm:w-60 h-[450px] w-[300px] rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                 <div className="absolute inset-0 rounded-xl [backface-visibility:hidden]">
@@ -149,7 +151,7 @@ const GuideCards = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
 
           </div>
         </div>

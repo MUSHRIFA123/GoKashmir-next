@@ -6,6 +6,7 @@ import Link from "next/link";
 import RelatedCards from "@/components/RelatedCards";
 import { FaHeart } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export default function SeasonsAnsWheather() {
   const galleryItems = [

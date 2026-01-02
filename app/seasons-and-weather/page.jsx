@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import RelatedCards from "@/components/RelatedCards";
 import { FaHeart } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export default function SeasonsAnsWeather() {
   const [favorites, setFavorites] = useState([]);

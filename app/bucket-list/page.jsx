@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaTrash } from "react-icons/fa";
+import Image from 'next/image';
 
 export default function BucketList() {
   const [items, setItems] = useState([]);

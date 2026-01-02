@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { marked } from "marked";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer"; // Make sure you have this component
+import Image from 'next/image';
 
 export default async function EventsDetail({ params }) {
   const { slug } = params;

@@ -1,6 +1,7 @@
 "use client"
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from 'next/link'
 
 export default function PrivacyPolicy() {
   return (
@@ -39,7 +40,7 @@ export default function PrivacyPolicy() {
 
         <h2 className="text-2xl font-semibold mt-6 mb-2">Your Rights</h2>
         <p className="mb-4">
-          You have the right to access, update, or delete your personal information. You can also opt-out of receiving marketing communications from us at any time by contacting us at <a href="mailto:gokashmir.info@gmail.com" className="text-blue-600 underline">gokashmir.info@gmail.com</a>.
+          You have the right to access, update, or delete your personal information. You can also opt-out of receiving marketing communications from us at any time by contacting us at <Link href="mailto:gokashmir.info@gmail.com" className="text-blue-600 underline">gokashmir.info@gmail.com</Link>.
         </p>
 
         <h2 className="text-2xl font-semibold mt-6 mb-2">Data Security</h2>
@@ -54,7 +55,7 @@ export default function PrivacyPolicy() {
 
         <h2 className="text-2xl font-semibold mt-6 mb-2">Contact Us</h2>
         <p>
-          If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: <a href="mailto:gokashmir.info@gmail.com" className="text-blue-600 underline">gokashmir.info@gmail.com</a>
+          If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: <Link href="mailto:gokashmir.info@gmail.com" className="text-blue-600 underline">gokashmir.info@gmail.com</Link>
         </p>
       </section>
       <Footer />

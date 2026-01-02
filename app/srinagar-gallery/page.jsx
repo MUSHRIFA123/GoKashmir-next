@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import RelatedCards from "@/components/RelatedCards";
+import Image from 'next/image';
 
 export default function Gallery() {
 

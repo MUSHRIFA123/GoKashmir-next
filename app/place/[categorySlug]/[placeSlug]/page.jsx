@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedCards from "@/components/RelatedCards";
+import Image from 'next/image';
 
 async function getPlace(categorySlug, placeSlug) {
   const res = await fetch(

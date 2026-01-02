@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Sponsers() {
   return (
@@ -39,7 +40,7 @@ export default function Sponsers() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-[-8]">
   {/* MakeMyTrip */}
   <div className="flex flex-col items-center">
-    <a
+    <Link
       href="https://www.makemytrip.com"
       target="_blank"
       rel="noopener noreferrer"
@@ -50,23 +51,23 @@ export default function Sponsers() {
         alt="MakeMyTrip Logo"
         className="h-9 w-13"
       />
-    </a>
+    </Link>
     <p className="text-xs text-gray-500 text-center">
     Logo:{" "}
-      <a
+      <Link
         href="https://commons.wikimedia.org/wiki/File:Makemytrip_logo.svg"
         target="_blank"
         rel="noopener noreferrer"
         className="underline hover:text-blue-600"
       >
         Wikimedia Commons
-      </a>{" "}
+      </Link>{" "}
     </p>
   </div>
 
   {/* Yatra */}
   <div className="flex flex-col items-center">
-    <a
+    <Link
       href="https://www.yatra.com"
       target="_blank"
       rel="noopener noreferrer"
@@ -77,23 +78,23 @@ export default function Sponsers() {
         alt="Yatra Logo"
         className="h-9 w-13"
       />
-    </a>
+    </Link>
     <p className="text-xs text-gray-500 text-center">
       Logo:{" "}
-      <a
+      <Link
         href="https://commons.wikimedia.org/wiki/File:Yatra_logo.svg"
         target="_blank"
         rel="noopener noreferrer"
         className="underline hover:text-blue-600"
       >
         Wikimedia Commons
-      </a>
+      </Link>
     </p>
   </div>
 
   {/* eKashmir Tourism */}
 <div className="flex flex-col items-center">
-  <a
+  <Link
     href="https://www.ekashmirtourism.com"
     target="_blank"
     rel="noopener noreferrer"
@@ -104,15 +105,15 @@ export default function Sponsers() {
       alt="eKashmir Tourism Logo"
       className="h-9 w-13"
     />
-  </a>
+  </Link>
   <p className="text-xs text-gray-500 text-center">
-    Logo: <a href="https://www.ekashmirtourism.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">eKashmir Tourism</a>
+    Logo: <Link href="https://www.ekashmirtourism.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">eKashmir Tourism</Link>
   </p>
 </div>
 
   {/* Etripto.in / Kashmir Tour Package */}
   <div className="flex flex-col items-center">
-   <a
+   <Link
     href="https://www.tourradar.com"
     target="_blank"
     rel="noopener noreferrer"
@@ -123,9 +124,9 @@ export default function Sponsers() {
       alt="TourRadar Logo"
       className="h-9 w-13"
     />
-  </a>
+  </Link>
   <p className="text-xs text-gray-500 text-center">
-    Logo: <a href="https://commons.wikimedia.org/wiki/File:TourRadar_logo.png" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Wikimedia Commons</a>
+    Logo: <Link href="https://commons.wikimedia.org/wiki/File:TourRadar_logo.png" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Wikimedia Commons</Link>
   </p>
   </div>
 </div>

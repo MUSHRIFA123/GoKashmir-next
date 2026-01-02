@@ -1,4 +1,5 @@
 import SeasonGuide from '@/data/json/SeasonGuide';
+import Image from 'next/image';
 
 export default function PaintingGuideCards() {
   return (

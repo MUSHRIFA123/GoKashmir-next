@@ -1,6 +1,7 @@
 import { connectDB } from "@/lib/mongodb";
 import Events from "@/models/Events";
 import { marked } from "marked";
+import Image from 'next/image';
 
 export default async function EventsDetail({ params }) {
   const { slug } = params;
@@ -26,7 +27,6 @@ export default async function EventsDetail({ params }) {
           className="w-full h-80 object-cover rounded mb-6"
         />
       )}
-
       {/* Headline / Subheadline */}
       {eventsItem.headline && <h2 className="text-xl font-semibold mb-2">{eventsItem.headline}</h2>}
       {eventsItem.subheadline && <p className="text-gray-700 mb-4">{eventsItem.subheadline}</p>}

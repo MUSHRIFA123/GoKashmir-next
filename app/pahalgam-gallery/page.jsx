@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import RelatedCards from "@/components/RelatedCards";
+import Image from 'next/image';
 
 export default function Gallery() {
 
@@ -15,7 +16,7 @@ export default function Gallery() {
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
       {/* Large item */}
       <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/tourist-resort.jpg"
           alt="Nature"
           className="w-full h-full object-cover"
@@ -31,7 +32,7 @@ export default function Gallery() {
       </div>
       {/* Two small items */}
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/mountains.jpg"
           alt="Food"
           className="w-full h-48 object-cover"
@@ -43,7 +44,7 @@ export default function Gallery() {
         </div>
       </div>
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/snow-in-mountain.jpg"
           alt="Technology"
           className="w-full h-48 object-cover"
@@ -56,7 +57,7 @@ export default function Gallery() {
       </div>
       {/* Three medium items */}
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/landscape.jpg"
           alt="Travel"
           className="w-full h-48 object-cover"
@@ -68,7 +69,7 @@ export default function Gallery() {
         </div>
       </div>
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/forest-stream.jpg"
           alt="Art"
           className="w-full h-48 object-cover"
@@ -83,7 +84,7 @@ export default function Gallery() {
       </div>
       {/* bottom cards */}
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/snow-covered-ground.jpg"
           alt="Sport"
           className="w-full h-48 object-cover"
@@ -95,7 +96,7 @@ export default function Gallery() {
         </div>
       </div>
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/flowers-on-meadow.jpg"
           alt="Sport"
           className="w-full h-48 object-cover"
@@ -107,7 +108,7 @@ export default function Gallery() {
         </div>
       </div>
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/forested-area.jpg"
           alt="Sport"
           className="w-full h-48 object-cover"
@@ -119,7 +120,7 @@ export default function Gallery() {
         </div>
       </div>
       <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-        <img
+        <img 
           src="/img/pahalgam-gallery/house.jpg"
           alt="Sport"
           className="w-full h-48 object-cover"

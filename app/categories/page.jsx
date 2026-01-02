@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import RelatedCards from "@/components/RelatedCards";
+import Image from 'next/image';
 
 export default function SeasonsAnsWheather() {
 
@@ -21,7 +22,7 @@ export default function SeasonsAnsWheather() {
           <div className="menu-items grid gap-10 md:grid-cols-2 lg:grid-cols-3">
 
             {/* Card 1 */}
-            <a href="/attractions" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
+            <Link href="/attractions" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
               <img
                 src="/img/Herocards/attractions.jpg"
                 alt="Top Attractions"
@@ -36,10 +37,10 @@ export default function SeasonsAnsWheather() {
                   Explore &rarr;
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Card 2 */}
-            <a href="/restaurants" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
+            <Link href="/restaurants" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
               <img
                 src="/img/Herocards/restaurants.jpg"
                 alt="Restaurants"
@@ -54,10 +55,10 @@ export default function SeasonsAnsWheather() {
                   Explore &rarr;
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Card 3 */}
-            <a href="/culture-and-heritage" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
+            <Link href="/culture-and-heritage" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
               <img
                 src="/img/Herocards/culture.jpg"
                 alt="Culture & Heritage"
@@ -72,10 +73,10 @@ export default function SeasonsAnsWheather() {
                   Explore &rarr;
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Card 4 */}
-            <a href="/shoppings" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
+            <Link href="/shoppings" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
               <img
                 src="/img/Herocards/shopping.jpg"
                 alt="Shopping"
@@ -90,10 +91,10 @@ export default function SeasonsAnsWheather() {
                   Explore &rarr;
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Card 5 */}
-            <a href="/seasons-and-weather" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
+            <Link href="/seasons-and-weather" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
               <img
                 src="/img/Herocards/season.jpg"
                 alt="Seasons & Weather"
@@ -108,10 +109,10 @@ export default function SeasonsAnsWheather() {
                   Explore &rarr;
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Card 6 */}
-            <a href="/trekkings-and-adventures" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
+            <Link href="/trekkings-and-adventures" className="menu-item bg-white rounded-xl shadow-md overflow-hidden block">
               <img
                 src="/img/Herocards/adventure.jpg"
                 alt="Trekking & Adventures"
@@ -126,7 +127,7 @@ export default function SeasonsAnsWheather() {
                   Explore &rarr;
                 </div>
               </div>
-            </a>
+            </Link>
 
           </div>
         </div>

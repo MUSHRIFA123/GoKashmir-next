@@ -1,6 +1,7 @@
 import { connectDB } from "@/lib/mongodb";
 import News from "@/models/News";
 import { marked } from "marked";
+import Image from 'next/image';
 
 export default async function NewsDetail({ params }) {
   const { slug } = params;
