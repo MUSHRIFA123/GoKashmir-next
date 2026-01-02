@@ -43,7 +43,7 @@ export default function BestDestination() {
           {/* ⭐ Cards Section */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             {destinations.map((dest, idx) => (
-              <a key={idx} href={dest.link} className="relative group">
+              <Link key={idx} href={dest.link} className="relative group">
                 <img
                   src={dest.image}
                   className={`rounded-xl ${
@@ -59,7 +59,7 @@ export default function BestDestination() {
                 >
                   {dest.name}
                 </span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

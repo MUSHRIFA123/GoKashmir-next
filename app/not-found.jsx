@@ -26,12 +26,12 @@ export default function Custom404() {
         <p className="text-xl text-green-800 mt-2">
           We can't seem to find the page you're looking for.
         </p>
-        <a
+        <Link
           href="/"
           className="mt-6 inline-block bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transform transition hover:scale-105 hover:bg-green-700"
         >
           Return Home
-        </a>
+        </Link>
       </div>
     </>
   );
