@@ -1,11 +1,11 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedCards from "@/components/RelatedCards";
-import Image from 'next/image';
 
 async function getPlace(categorySlug, placeSlug) {
   const res = await fetch(
-    `http://localhost:3000/api/place/${categorySlug}/${placeSlug}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/place/${categorySlug}/${placeSlug}`,
     { cache: "no-store" }
   );
 
@@ -14,7 +14,7 @@ async function getPlace(categorySlug, placeSlug) {
 }
 
 export default async function PlacePage({ params }) {
-  const { categorySlug, placeSlug } = params;
+  const { categorySlug, placeSlug } = await params;
   const place = await getPlace(categorySlug, placeSlug);
 
   if (!place) {

@@ -1,3 +1,4 @@
+# Block bad bots
 User-agent: AhrefsBot
 User-agent: BLEXBot
 User-agent: Cliqzbot
@@ -8,11 +9,12 @@ User-agent: Scrapy
 User-agent: SemrushBot
 Disallow: /
 
+# Allow search engines
 User-agent: *
-Disallow: /about
-Disallow: /api/*
-Disallow: /contact
+Disallow: /api/
+Disallow: /_next/
 Disallow: /dmca
 Disallow: /privacy
 Disallow: /terms
+
 Allow: /
