@@ -3,7 +3,7 @@ import { connectDB } from "@/lib/mongodb";
 import Places from "@/models/Places";
 
 export async function GET(req, { params }) {
-  const { categorySlug, placeSlug } = params;
+  const { categorySlug, placeSlug } = await  params;
 
   await connectDB();
 
