@@ -16,7 +16,7 @@ export default function SeasonsAnsWheather() {
     { title: "Sonmarg", img: "/img/attractions/sonamarg.jpg", href: "/place/attractions/sonmarg" },
     { title: "Mughal Gardens", img: "/img/attractions/mughal-gardens.jpg", href: "/place/attractions/mughal-gardens" },
     { title: "Tulip Garden Srinagar", img: "/img/attractions/tulip-garden.jpg", href: "/place/attractions/tulip-garden-srinagar" },
-    { title: "Aru Valley", img: "/img/attractions/aru-alley.jpg", href: "/place/attractions/aru-valley" },
+    { title: "Aru Valley", img: "/img/attractions/aru-valley.jpg", href: "/place/attractions/aru-valley" },
     { title: "Srinagar", img: "/img/attractions/srinagar.jpg", href: "/place/attractions/srinagar" },
   ];
 
