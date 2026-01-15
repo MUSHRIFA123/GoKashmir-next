@@ -5,20 +5,20 @@ import { remark } from "remark";
 import html from "remark-html";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
 // Generate static params for dynamic routes
 export async function generateStaticParams() {
-  const dir = path.join(process.cwd(), "data/markdown/places/attractions");
+  const dir = path.join(
+    process.cwd(),
+    "data/markdown/places/attractions"
+  );
 
-  if (!fs.existsSync(dir)) {
-    console.warn("Warning: attractions folder does not exist!");
-    return [];
-  }
+  if (!fs.existsSync(dir)) return [];
 
-  const files = fs.readdirSync(dir).filter((file) => file.endsWith(".md"));
-
-  return files.map((file) => ({
-    slug: file.replace(".md", ""),
+  return fs.readdirSync(dir).map(file => ({
+    slug: file.replace(".md", "")
   }));
 }
 
