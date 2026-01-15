@@ -5,19 +5,9 @@ const nextConfig = {
     return [
       {
         source: '/place',
-        destination: '/things-to-do',
+        destination: '/place',
         permanent: true, // 308 redirect
-      },
-      {
-        source: '/locality',
-        destination: '/things-to-do',
-        permanent: true,
-      },
-      {
-        source: '/things-to-do/food-and-drink/local-cuisine-bangalore',
-        destination: '/things-to-do/food-and-drink/local-dishes-bangalore',
-        permanent: true,
-      },
+      }
     ];
   },
 

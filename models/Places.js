@@ -1,21 +1,23 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const FaqSchema = new mongoose.Schema({
-  question: { type: String, required: true },
-  answer: { type: String, required: true },
-});
+const placeSchema = new mongoose.Schema({
+  title: String,
+  slug: { type: String, unique: true },
+  description: String,
+  description_seo: String,
+  address_line_1: String,
+  address_line_2: String,
+  area: String,
+  category: String,
+  average_rating: String,
+  reviews: String,
+  features: String,
+  travel_information: String,
+  locality: String,
+  faqs: [{
+    question: String,
+    answer: String
+  }]
+}, { timestamps: true });
 
-const PlaceSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  slug: { type: String, required: true, unique: true },
-  category: { type: String },
-  images: { type: [String], default: [] },
-  description: { type: String },
-  travel_information: { type: String },
-  features: { type: [String], default: [] },
-  average_rating: { type: Number, default: 0 },
-  reviews: { type: Number, default: 0 },
-  faqs: { type: [FaqSchema], default: [] },
-});
-
-export default mongoose.models.Place || mongoose.model("Place", PlaceSchema);
+export default mongoose.models.Place || mongoose.model('Place', placeSchema);
