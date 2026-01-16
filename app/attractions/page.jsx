@@ -10,14 +10,14 @@ import Image from 'next/image';
 
 export default function SeasonsAnsWheather() {
   const galleryItems = [
-    { title: "Dal Lake", img: "/img/attractions/dal-lake.jpg", href: "/place/attractions/dal-lake" },
-    { title: "Gulmarg", img: "/img/attractions/gulmarg.jpg", href: "/place/attractions/gulmarg" },
-    { title: "Pahalgam & Betaab Valley", img: "/img/attractions/pahalgam.jpg", href: "/place/attractions/pahalgam-betaab-valley" },
-    { title: "Sonmarg", img: "/img/attractions/sonamarg.jpg", href: "/place/attractions/sonmarg" },
-    { title: "Mughal Gardens", img: "/img/attractions/mughal-gardens.jpg", href: "/place/attractions/mughal-gardens" },
-    { title: "Tulip Garden Srinagar", img: "/img/attractions/tulip-garden.jpg", href: "/place/attractions/tulip-garden-srinagar" },
-    { title: "Aru Valley", img: "/img/attractions/aru-valley.jpg", href: "/place/attractions/aru-valley" },
-    { title: "Srinagar", img: "/img/attractions/srinagar.jpg", href: "/place/attractions/srinagar" },
+    { title: "Dal Lake", img: "/img/attractions/dal-lake.jpg", href: "attractions/dal-lake" },
+    { title: "Gulmarg", img: "/img/attractions/gulmarg.jpg", href: "attractions/gulmarg" },
+    { title: "Pahalgam & Betaab Valley", img: "/img/attractions/pahalgam.jpg", href: "attractions/pahalgam-betaab-valley" },
+    { title: "Sonmarg", img: "/img/attractions/sonamarg.jpg", href: "attractions/sonmarg" },
+    { title: "Mughal Gardens", img: "/img/attractions/mughal-gardens.jpg", href: "attractions/mughal-gardens" },
+    { title: "Tulip Garden Srinagar", img: "/img/attractions/tulip-garden.jpg", href: "attractions/tulip-garden-srinagar" },
+    { title: "Aru Valley", img: "/img/attractions/aru-valley.jpg", href: "attractions/aru-valley" },
+    { title: "Srinagar", img: "/img/attractions/srinagar.jpg", href: "attractions/srinagar" },
   ];
 
   const [favorites, setFavorites] = useState([]);
