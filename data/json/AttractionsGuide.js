@@ -19,7 +19,7 @@ const AttractionsGuide = [
   },
   {
     title: "Sonmarg",
-    slug: "sonmarg",
+    slug: "sonamarg",
     excerpt: "The Meadow of Gold, famous for glaciers, trekking routes, and snow views.",
     image: "/img/attractions/sonamarg.jpg"
   },

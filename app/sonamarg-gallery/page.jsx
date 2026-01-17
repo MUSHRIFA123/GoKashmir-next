@@ -134,7 +134,7 @@ export default function Gallery() {
     </div>
     <div className="flex justify-center mt-10">
       <Link
-        href="/place/attractions/sonamarg"
+        href="/attractions/sonamarg"
         className="px-8 py-3 text-lg font-semibold text-white bg-green-600 rounded-full
                   hover:bg-green-700 transition duration-300 shadow-lg"
       >
