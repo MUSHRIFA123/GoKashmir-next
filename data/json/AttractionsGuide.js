@@ -1,51 +1,108 @@
 const AttractionsGuide = [
+  // 🏙️ Srinagar
   {
     title: "Dal Lake",
     slug: "dal-lake",
-    excerpt: "The iconic heart of Srinagar, famous for houseboats, shikaras, and scenic sunsets.",
-    image: "/img/attractions/dal-lake.jpg"
-  },
-  {
-    title: "Gulmarg",
-    slug: "gulmarg",
-    excerpt: "A breathtaking hill station known for skiing, gondola rides, and alpine meadows.",
-    image: "/img/attractions/gulmarg.jpg"
-  },
-  {
-    title: "Pahalgam & Betaab Valley",
-    slug: "pahalgam-betaab-valley",
-    excerpt: "A lush valley surrounded by pine forests, rivers, and cinematic landscapes.",
-    image: "/img/attractions/pahalgam.jpg"
-  },
-  {
-    title: "Sonmarg",
-    slug: "sonamarg",
-    excerpt: "The Meadow of Gold, famous for glaciers, trekking routes, and snow views.",
-    image: "/img/attractions/sonamarg.jpg"
+    image: "/img/attractions/dal-lake.jpg",
+    location: "Srinagar",
+    top: true
   },
   {
     title: "Mughal Gardens",
     slug: "mughal-gardens",
-    excerpt: "Historic Persian-style gardens built by Mughal emperors along Dal Lake.",
-    image: "/img/attractions/mughal-gardens.jpg"
+    image: "/img/attractions/mughal-gardens.jpg",
+    location: "Srinagar",
+    top: true
   },
   {
     title: "Tulip Garden Srinagar",
     slug: "tulip-garden-srinagar",
-    excerpt: "Asia’s largest tulip garden, blooming vibrantly every spring season.",
-    image: "/img/attractions/tulip-garden.jpg"
+    image: "/img/attractions/tulip-garden.jpg",
+    location: "Srinagar",
+    top: true
+  },
+  {
+    title: "Jamia Masjid Srinagar",
+    slug: "jamia-masjid-srinagar",
+    image: "/img/attractions/jamia-masjid.jpg",
+    location: "Srinagar",
+    top: false
+  },
+
+  // 🏔️ Gulmarg
+  {
+    title: "Gulmarg",
+    slug: "gulmarg",
+    image: "/img/attractions/gulmarg.jpg",
+    location: "Gulmarg",
+    top: true
+  },
+  {
+    title: "Gulmarg Gondola",
+    slug: "gulmarg-gondola",
+    image: "/img/attractions/gulmarg-gondola.jpg",
+    location: "Gulmarg",
+    top: true
+  },
+  {
+    title: "Apharwat Peak",
+    slug: "apharwat-peak",
+    image: "/img/attractions/apharwat-peak.jpg",
+    location: "Gulmarg",
+    top: false
+  },
+
+  // 🌲 Pahalgam
+  {
+    title: "Pahalgam",
+    slug: "pahalgam",
+    image: "/img/attractions/pahalgam.jpg",
+    location: "Pahalgam",
+    top: true
+  },
+  {
+    title: "Betaab Valley",
+    slug: "betaab-valley",
+    image: "/img/attractions/betaab-valley.jpg",
+    location: "Pahalgam",
+    top: true
   },
   {
     title: "Aru Valley",
     slug: "aru-valley",
-    excerpt: "A peaceful village surrounded by mountains, ideal for nature lovers.",
-    image: "/img/attractions/aru-valley.jpg"
+    image: "/img/attractions/aru-valley.jpg",
+    location: "Pahalgam",
+    top: false
   },
   {
-    title: "Srinagar",
-    slug: "srinagar",
-    excerpt: "The summer capital of Jammu & Kashmir, rich in culture, lakes, and heritage.",
-    image: "/img/attractions/srinagar.jpg"
+    title: "Chandanwari",
+    slug: "chandanwari",
+    image: "/img/attractions/chandanwari.jpg",
+    location: "Pahalgam",
+    top: false
+  },
+
+  // ❄️ Sonmarg
+  {
+    title: "Sonmarg",
+    slug: "sonamarg",
+    image: "/img/attractions/sonamarg.jpg",
+    location: "Sonmarg",
+    top: true
+  },
+  {
+    title: "Thajiwas Glacier",
+    slug: "thajiwas-glacier",
+    image: "/img/attractions/thajiwas-glacier.jpg",
+    location: "Sonmarg",
+    top: true
+  },
+  {
+    title: "Zoji La Pass",
+    slug: "zoji-la-pass",
+    image: "/img/attractions/zoji-la-pass.jpg",
+    location: "Sonmarg",
+    top: false
   }
 ];
 
