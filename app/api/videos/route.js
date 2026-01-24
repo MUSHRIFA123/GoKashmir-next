@@ -32,6 +32,6 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   await connectDB();
-  const video = await Video.find().sort({ date: -1 }).lean(); // sort by latest first
-  return NextResponse.json(video);
+  const videos = await Video.find().sort({ date: -1 }).lean(); // sort by latest first
+  return NextResponse.json(videos);
 }
