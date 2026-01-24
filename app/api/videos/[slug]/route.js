@@ -4,7 +4,7 @@ const uri = process.env.MONGODB_URI;
 const dbName = process.env.MONGODB_DB;
 
 export async function GET(req, { params }) {
-  const { slug } = await params;  // Fix: Await params before destructuring
+  const { slug } = params;  // Fix: Await params before destructuring
   let client;
 
   try {

@@ -4,7 +4,7 @@ import React from "react";
 
 export default async function VideoPage({ params }) {
   const { slug } = await params;  // Fix: Await params before destructuring
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   const res = await fetch(`${baseUrl}/api/videos/${slug}`, { cache: "no-store" });
   const video = await res.json();
