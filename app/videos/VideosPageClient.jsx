@@ -38,7 +38,7 @@ export default function VideosPageClient({ videos }) {
     <div className="max-w-7xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold mb-4">Videos</h1>
       <p className="text-gray-600 mb-8">
-        Explore our collection of videos featuring product demos, case studies, webinars, and industry insights.
+        Explore our collection of videos showcasing Kashmir travel guides, scenic destinations, local experiences, itineraries, and insider tips to help you plan the perfect trip.
       </p>
 
       {/* Videos Grid */}
