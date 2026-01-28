@@ -1,15 +1,23 @@
-import React from "react";
-import Link from "next/link";
+"use client";
+
+import React, { useState, useEffect } from "react";
 
 export default function VideoCard({ video }) {
-  if (!video) return null;
+  const [formattedDate, setFormattedDate] = useState("");
+
+  useEffect(() => {
+    if (video?.publishedAt) {
+      setFormattedDate(new Date(video.publishedAt).toLocaleDateString());
+    }
+  }, [video]);
 
   const featuredImageUrl = video.featuredImage?.url || "placeholder.jpg";
   const featuredImageAlt = video.featuredImage?.alt || video.title || "Video";
 
+  if (!video) return null;
+
   return (
-    // Wrap entire card in Link to make it clickable
-    <Link href={`/videos/${video.slug}`}>
+    <a href={`/videos/${video.slug}`} className="block">
       <div className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition duration-200 cursor-pointer">
         <div className="relative">
           <img
@@ -31,11 +39,9 @@ export default function VideoCard({ video }) {
         <div className="p-4">
           <h2 className="font-semibold text-lg mb-1">{video.title || "Untitled Video"}</h2>
           <p className="text-gray-500 text-sm mb-2">{video.headline || ""}</p>
-          <p className="text-gray-400 text-xs">
-            {video.publishedAt ? new Date(video.publishedAt).toLocaleDateString() : ""}
-          </p>
+          <p className="text-gray-400 text-xs">{formattedDate}</p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }

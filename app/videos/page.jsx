@@ -3,15 +3,27 @@ import Navbar from "@/components/Navbar";
 import VideosPageClient from "./VideosPageClient";
 import Footer from "@/components/Footer";
 
-async function getVideos() {
+// async function getVideos() {
+//   const uri = process.env.MONGODB_URI;
+//   const dbName = process.env.MONGODB_DB;
+//   let client;
+  
+
+//   if (!uri || !dbName) {
+//     console.error("Missing MONGODB_URI or MONGODB_DB");
+//     return [];
+//   }
+export async function getVideos() {
   const uri = process.env.MONGODB_URI;
   const dbName = process.env.MONGODB_DB;
-  let client;
 
+  // Check if env variables exist
   if (!uri || !dbName) {
     console.error("Missing MONGODB_URI or MONGODB_DB");
     return [];
   }
+
+  let client;
 
   try {
     client = new MongoClient(uri);
