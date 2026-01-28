@@ -2,12 +2,19 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import RelatedCards from "@/components/RelatedCards";
-import Image from 'next/image';
+import Head from "next/head";
 
-export default function SeasonsAnsWheather() {
+export default function Categories() {
 
   return (
     <>
+    <Head>
+        <title>Explore Kashmir – Attractions, Food, Culture, Shopping & Adventures</title>
+        <meta
+          name="description"
+          content="Discover the best of Kashmir in one place! Explore top attractions, local restaurants, rich culture, shopping destinations, seasons, weather, and adventure experiences."
+        />
+      </Head>
       <Navbar />
       {/* MENU / HERO CARDS SECTION */}
       <section className="menu py-10" id="menu">

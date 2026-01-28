@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
-
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedCards from "@/components/RelatedCards";
@@ -54,6 +54,13 @@ export default function AttractionsPage() {
 
   return (
     <>
+    <Head>
+        <title>Shopping in Kashmir – Best Markets, Local Shops & Souvenirs</title>
+        <meta
+          name="description"
+          content="Explore the best shopping destinations in Kashmir! From bustling local markets to handicraft stores and souvenir shops, find everything you need for an unforgettable shopping experience."
+        />
+      </Head>
       <Navbar />
 
       <section className="py-20 bg-white">

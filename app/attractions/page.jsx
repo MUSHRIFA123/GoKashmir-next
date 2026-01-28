@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
-
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedCards from "@/components/RelatedCards";
@@ -54,6 +54,13 @@ export default function AttractionsPage() {
 
   return (
     <>
+     <Head>
+        <title>Top Attractions in Kashmir – Explore Srinagar, Gulmarg & Pahalgam</title>
+        <meta
+          name="description"
+          content="Discover the top attractions in Kashmir including Srinagar, Dal Lake, Gulmarg, Pahalgam, and more. Plan your trip with our complete travel guide."
+        />
+      </Head>
       <Navbar />
 
       <section className="py-20 bg-white">
