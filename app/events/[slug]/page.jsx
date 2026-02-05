@@ -3,11 +3,11 @@ import Events from "@/models/Events";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer"; // Make sure you have this component
+import Footer from "@/components/Footer";
 import Image from 'next/image';
 
 export default async function EventsDetail({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   await connectDB();
 
@@ -28,10 +28,13 @@ export default async function EventsDetail({ params }) {
 
         {/* Image */}
         {event.images?.[0] && (
-          <img
+          <Image
             src={event.images[0]}
             alt={event.title}
+            width={1200}
+            height={320}
             className="w-full h-80 object-cover rounded mb-6"
+            priority
           />
         )}
 
@@ -41,7 +44,7 @@ export default async function EventsDetail({ params }) {
         {/* Long Description (Markdown) */}
         {event.long_description && (
           <div
-            className="prose max-w-none text-gray-800 mb-6"
+            className="prose max-w-none text-gray-800 mb-6 prose-headings:text-gray-900"
             dangerouslySetInnerHTML={{ __html: marked.parse(event.long_description) }}
           />
         )}
