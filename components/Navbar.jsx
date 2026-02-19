@@ -29,6 +29,9 @@ export default function Navbar() {
               <Link href="/events" className="hover:text-white">Events</Link>
             </li>
             <li>
+              <Link href="/contact" className="hover:text-white">Contact Us</Link>
+            </li>
+            <li>
               <Link href="/bucket-list">
                 <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
                   Bucket List
