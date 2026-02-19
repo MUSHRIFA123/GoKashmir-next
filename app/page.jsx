@@ -15,6 +15,7 @@ export default async function Home() {
       <HomepageVideos videos={videos} />
       <Sponsers/>
       <Footer/>
+      <Adsterra300x250 />
     </>
   )
 }
