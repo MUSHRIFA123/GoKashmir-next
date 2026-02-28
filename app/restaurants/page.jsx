@@ -15,17 +15,14 @@ export default function KashmirRestaurants() {
 
   const categories = ["All","Cafes", "Fine Dining", "Vegetarian","Kashmiri Cuisine"];
 
-  /* ✅ Load bucket list */
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("bucketList")) || [];
     setBucketList(saved);
   }, []);
 
-  /* ✅ Check favorite */
   const isFavorite = (title) =>
     bucketList.some((item) => item.title === title);
 
-  /* ✅ Toggle favorite */
   const toggleFavorite = (restaurant) => {
     let updated;
 
@@ -39,7 +36,7 @@ export default function KashmirRestaurants() {
         {
           title: restaurant.name,
           img: restaurant.image,
-          href: `/restaurants/${restaurant.slug}`, // ✅ MUST exist
+          href: `/restaurants/${restaurant.slug}`, 
           type: "restaurant",
         },
       ];
@@ -61,7 +58,6 @@ export default function KashmirRestaurants() {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
 
-          {/* Heading */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4 text-emerald-600">
               Best Restaurants in Kashmir
@@ -71,7 +67,6 @@ export default function KashmirRestaurants() {
             </p>
           </div>
 
-          {/* Filters */}
           <div className="flex flex-wrap justify-center mb-10">
             {categories.map((cat) => (
               <button
@@ -89,14 +84,12 @@ export default function KashmirRestaurants() {
             ))}
           </div>
 
-          {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {filteredRestaurants.map((restaurant) => (
               <div
                 key={restaurant.id}
                 className="group relative shadow-md hover:shadow-xl rounded-lg overflow-hidden"
               >
-                {/* ❤️ Favorite Icon */}
                 <button
                   onClick={(e) => {
                     e.preventDefault();
@@ -120,7 +113,6 @@ export default function KashmirRestaurants() {
                   />
                 </button>
 
-                {/* Card Link */}
                 <Link href={`/restaurants/${restaurant.slug}`}>
                   <Image
                     src={restaurant.image}
@@ -130,7 +122,6 @@ export default function KashmirRestaurants() {
                     className="w-full h-60 object-cover"
                   />
 
-                  {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-green-600 opacity-0 group-hover:opacity-70 transition"></div>
 
                   <div className="absolute bottom-0 w-full p-4 text-center z-10">

@@ -1,115 +1,27 @@
-"use client";
-
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Link from "next/link";
+import Footer from "@/components/Footer";
 import RelatedCards from "@/components/RelatedCards";
-import { FaHeart } from "react-icons/fa";
-import { useEffect, useState } from "react";
 import CultureAndHeritageGuide from "@/data/json/CultureAndHeritageGuide";
+import CultureClient from "./CultureClient";
+import ListingHero from "@/components/ListingHero";
 
-export default function AttractionsPage() {
-  const [favorites, setFavorites] = useState([]);
+export const metadata = {
+  title: "Culture and Heritage of Kashmir – Traditions, Art and History",
+  description:
+    "Explore the rich culture and heritage of Kashmir including traditions, architecture, crafts, music and historical landmarks.",
+};
 
-  useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("bucketList")) || [];
-    setFavorites(saved);
-  }, []);
-
-  const toggleFavorite = (item) => {
-    const updated = favorites.some(f => f.title === item.title)
-      ? favorites.filter(f => f.title !== item.title)
-      : [...favorites, item];
-
-    setFavorites(updated);
-    localStorage.setItem("bucketList", JSON.stringify(updated));
-  };
-
-  const isFavorite = (title) =>
-    favorites.some(f => f.title === title);
-
+export default function CultureAndHeritagePage() {
   return (
     <>
       <Navbar />
-
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-
-          {/* Header */}
-          <div className="text-center mb-16">
-            <span className="text-xl text-green-800 font-semibold">
-              CULTURE & HERITAGE
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-green-900 mt-4">
-              Experience Kashmir’s Rich Legacy
-            </h2>
-            <p className="max-w-2xl mx-auto text-gray-600 mt-6 text-lg">
-              Immerse yourself in Kashmir’s vibrant traditions, ancient architecture, soulful music, and timeless craftsmanship that reflect centuries of history and cultural harmony.
-            </p>
-          </div>
-
-          {/* Gallery */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {CultureAndHeritageGuide.map((item) => (
-              <div
-                key={item.slug}
-                className="relative group rounded-lg overflow-hidden aspect-square"
-              >
-                {/* ❤️ Favorite */}
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    toggleFavorite({
-                      title: item.title,
-                      img: item.image,
-                      href: `/culture-and-heritage/${item.slug}`,
-                    });
-                  }}
-                  className={`absolute top-3 right-3 z-10 p-2 rounded-full
-                    ${isFavorite(item.title)
-                      ? "bg-white/90"
-                      : "bg-black/40 hover:bg-black/60"}
-                  `}
-                >
-                  <FaHeart
-                    className={`text-xl
-                      ${isFavorite(item.title)
-                        ? "text-red-500 scale-110"
-                        : "text-gray-300"}
-                    `}
-                  />
-                </button>
-
-                {/* Card */}
-                <Link href={`/culture-and-heritage/${item.slug}`} className="block w-full h-full">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
-                                  opacity-0 group-hover:opacity-100 transition flex items-end p-6">
-                    <h3 className="text-white text-xl font-bold">
-                      {item.title}
-                    </h3>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
-
-          {/* Actions */}
-          <div className="text-center mt-16">
-            <Link href="/bucket-list">
-              <button className="px-8 py-3 bg-rose-600 text-white rounded-lg hover:bg-rose-700 shadow-lg">
-                View Bucket List
-              </button>
-            </Link>
-          </div>
-
-        </div>
-      </section>
+      <ListingHero
+        title="Culture & Heritage of Kashmir"
+        subtitle="Traditions, architecture and history"
+        description="Experience the rich cultural heritage of **Kashmir** through its timeless traditions, graceful architecture, vibrant festivals, exquisite handicrafts, and deeply rooted spiritual places. From centuries-old shrines and wooden mosques to colourful local celebrations and artisan workshops, every corner reflects the region’s living history. This guide helps you explore the cultural soul of Kashmir and understand the stories, skills, and beliefs that continue to shape everyday life in the valley."
+        image="img\culture-and-heritage\culture-hero\baba-art-and-crafts.jpg"
+      />
+      <CultureClient items={CultureAndHeritageGuide} />
 
       <RelatedCards />
       <Footer />

@@ -1,117 +1,27 @@
-"use client";
-
-import Link from "next/link";
-import SeasonGuide from "@/data/json/SeasonGuide";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedCards from "@/components/RelatedCards";
-import { FaHeart } from "react-icons/fa";
-import { useEffect, useState } from "react";
-import Image from 'next/image';
+import SeasonGuide from "@/data/json/SeasonGuide";
+import SeasonsClient from "./SeasonsClient";
+import ListingHero from "@/components/ListingHero";
 
-export default function SeasonsAnsWeather() {
-  const [favorites, setFavorites] = useState([]);
+export const metadata = {
+  title: "Best Season and Weather Guide for Kashmir",
+  description:
+    "Complete season and weather guide for Kashmir including best time to visit, travel tips and seasonal highlights.",
+};
 
-  // Load bucket list
-  useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("bucketList")) || [];
-    setFavorites(saved);
-  }, []);
-
-  const toggleFavorite = (item) => {
-    let updated;
-
-    if (favorites.some(fav => fav.title === item.title)) {
-      updated = favorites.filter(fav => fav.title !== item.title);
-    } else {
-      updated = [...favorites, item];
-    }
-
-    setFavorites(updated);
-    localStorage.setItem("bucketList", JSON.stringify(updated));
-  };
-
-  const isFavorite = (title) =>
-    favorites.some(fav => fav.title === title);
-
+export default async function SeasonsAndWeatherPage() {
   return (
     <>
       <Navbar />
-
-      <section className="p-4 min-h-screen bg-slate-900">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-          {SeasonGuide.map((guide, index) => (
-            <div
-              key={index}
-              className="group relative block bg-black rounded-lg overflow-hidden"
-            >
-              {/* ❤️ Favorite Icon */}
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleFavorite({
-                    title: guide.title,
-                    img: guide.image,
-                    href: `/seasons-and-weather/${guide.slug}`,
-                  });
-                }}
-                className={`absolute top-4 right-4 z-10 p-2 rounded-full transition
-                  ${
-                    isFavorite(guide.title)
-                      ? "bg-white/90"
-                      : "bg-black/40 hover:bg-black/60"
-                  }
-                `}
-              >
-                <FaHeart
-                  className={`text-lg transition-transform duration-200
-                    ${
-                      isFavorite(guide.title)
-                        ? "text-red-500 scale-110"
-                        : "text-gray-300"
-                    }
-                  `}
-                />
-              </button>
-
-              {/* Card Link */}
-              <Link
-                href={`/seasons-and-weather/${guide.slug}`}
-                className="block h-full"
-              >
-                {/* Background Image */}
-                <img
-                  alt={guide.title}
-                  src={guide.image}
-                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                />
-
-                {/* Content */}
-                <div className="relative p-4 sm:p-6 lg:p-8">
-                  <p className="text-sm font-medium tracking-widest uppercase text-rose-400">
-                    Season
-                  </p>
-
-                  <p className="text-xl font-bold text-white sm:text-2xl">
-                    {guide.title.replace(" in Kashmir", "")}
-                  </p>
-
-                  <div className="mt-32 sm:mt-48 lg:mt-64">
-                    <div className="translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                      <p className="text-sm text-white">
-                        {guide.excerpt}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          ))}
-
-        </div>
-      </section>
-
+      <ListingHero
+        title="Seasons & Weather of Kashmir"
+        subtitle="Best time to visit, climate and travel tips"
+        description="Discover the changing seasons and weather of Kashmir, from fresh spring blossoms and pleasant summer days to colourful autumn landscapes and snow-covered winters. Each season offers a unique travel experience — whether you want to enjoy sightseeing, outdoor activities, photography, or a peaceful mountain escape. This guide helps you understand monthly weather patterns, temperature changes and the best time to plan your perfect Kashmir trip."
+        image="img/seasons/season-hero/srinagar.jpg"
+      />
+            <SeasonsClient guides={SeasonGuide} />
       <RelatedCards />
       <Footer />
     </>

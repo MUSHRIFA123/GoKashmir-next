@@ -16,7 +16,6 @@ export default async function AttractionPage({ params }) {
 
   const html = marked(content);
 
-  // Console log for local debugging (visible in terminal)
   console.log(`Rendering culture-and-heritage: ${data.title || slug} (${slug})`);
 
   return (
