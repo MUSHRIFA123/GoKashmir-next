@@ -8,7 +8,6 @@ const GuideCards = () => {
       <div className="mx-auto flex justify-center px-4 py-16 sm:py-24 lg:max-w-7xl">
         <div className="flex flex-col text-center max-w-6xl mx-auto">
 
-          {/* ---- TOP TITLE + DESCRIPTION ---- */}
           <h2 className="text-3xl font-bold text-emerald-600 py-5">
             Kashmir Travel Guide
           </h2>
@@ -19,7 +18,6 @@ const GuideCards = () => {
             travel tips, this guide helps you plan the perfect Kashmir trip.
           </p>
 
-          {/* ---- CARDS ---- */}
           <div className="grid gap-5 pt-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
 
             {/* Things to Do */}
@@ -88,7 +86,7 @@ const GuideCards = () => {
             </Link>
 
             {/* Travel Information */}
-            <Link href="/#" className="group flex justify-center [perspective:1000px]">
+            <Link href="/travel-guide" className="group flex justify-center [perspective:1000px]">
               <div className="relative lg:h-[400px] lg:w-64 sm:h-[365px] sm:w-60 h-[450px] w-[300px] rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                 <div className="absolute inset-0 rounded-xl [backface-visibility:hidden]">
