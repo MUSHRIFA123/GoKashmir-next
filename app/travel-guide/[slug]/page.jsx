@@ -28,14 +28,18 @@ export default async function SingleGuidePage({ params }) {
     <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">{guide.title}</h1>
 
-      {guide.image && (
+      {guide.image ? (
         <Image
-          src={guide.image}
+          src={`/img/travel-guide/${guide.image}`}
           alt={guide.title}
           width={800}
           height={400}
           className="w-full h-auto rounded mb-6"
         />
+      ) : (
+        <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+          No Image
+        </div>
       )}
 
       <div className="prose max-w-full">

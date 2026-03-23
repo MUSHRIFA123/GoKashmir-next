@@ -24,15 +24,15 @@ export default async function TravelGuidePage() {
             key={guide._id.toString()}
             className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition"
           >
-            {guide.image ? (
-              <Image
-                src={guide.image}
-                alt={guide.title}
-                width={400}
-                height={250}
-                className="w-full h-48 object-cover"
-              />
-            ) : (
+           {guide.image ? (
+                <Image
+                  src={`/img/travel-guide/${guide.image}`}
+                  alt={guide.title}
+                  width={400}
+                  height={250}
+                  className="w-full h-48 object-cover"
+                />
+              ) : (
               <div className="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">
                 No Image
               </div>
