@@ -12,6 +12,9 @@ export default async function Home() {
     <>
       <Navbar/>
       <HomeHero/>
+      <a href="YOUR_MONETAG_DIRECT_LINK" target="_blank">
+  🌍 Explore Kashmir Tour Packages
+</a>
       <HomepageVideos videos={videos} />
       <Sponsers/>
       <Footer/>
