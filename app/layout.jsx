@@ -8,8 +8,6 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   verification: {
-    // ✅ Use your AdSense-provided verification code here (check AdSense dashboard)
-    // Format: "your-long-verification-string-here"
     google: 'KbHGYyqwSZqkddVP5SKR1TO5DgHhvHM1dCk0A2q0WBc', 
     other: {
       "msvalidate.01": "EBA7B657CA06A7CB9A8CEEC8DB865816",
@@ -22,13 +20,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ AdSense script - exact format for crawler detection */}
+        {/* ✅ AdSense */}
         <script 
           async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7496144172676724"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
-        {/* ✅ Google Analytics GTM */}
+
+        {/* ✅ Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XHTLGGYR9Q"
           strategy="afterInteractive"
@@ -42,17 +41,23 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
+
       <body>
-         {/* ✅ Monetag In-Page Push Ad */}
+        {/* ✅ Monetag Script (RAW version added safely) */}
         <Script id="monetag-ad" strategy="afterInteractive">
           {`
             (function(s){
-              s.dataset.zone='10788093',
-              s.src='https://nap5k.com/tag.min.js'
-            })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
+              s.dataset.zone='10788093';
+              s.src='https://nap5k.com/tag.min.js';
+            })([document.documentElement, document.body]
+              .filter(Boolean)
+              .pop()
+              .appendChild(document.createElement('script')));
           `}
         </Script>
-        {children}</body>
+
+        {children}
+      </body>
     </html>
   )
 }
