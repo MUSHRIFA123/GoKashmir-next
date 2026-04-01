@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
 
-export default function AttractionsClient({ places }) {
+export default function AttractionsClient({ places = [] }) {
   const [favorites, setFavorites] = useState([]);
   const [showTopOnly, setShowTopOnly] = useState(false);
   const [selectedLocations, setSelectedLocations] = useState([]);
@@ -24,7 +24,8 @@ export default function AttractionsClient({ places }) {
     localStorage.setItem("bucketList", JSON.stringify(updated));
   };
 
-  const isFavorite = (slug) => favorites.some((f) => f.slug === slug);
+  const isFavorite = (slug) =>
+    favorites.some((f) => f.slug === slug);
 
   const locations = [...new Set(places.map((p) => p.locality))];
 
@@ -142,6 +143,7 @@ export default function AttractionsClient({ places }) {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
