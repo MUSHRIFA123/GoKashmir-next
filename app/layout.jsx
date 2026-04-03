@@ -1,17 +1,14 @@
 import './globals.css'
 import Script from "next/script";
+import OMG10Ad from '@/components/OMG10Ad'; // import the ad component
 
 export const metadata = {
   title: 'Go Kashmir',
   description: 'Your travel guide for Kashmir',
-  icons: {
-    icon: '/favicon.ico',
-  },
+  icons: { icon: '/favicon.ico' },
   verification: {
     google: 'KbHGYyqwSZqkddVP5SKR1TO5DgHhvHM1dCk0A2q0WBc', 
-    other: {
-      "msvalidate.01": "EBA7B657CA06A7CB9A8CEEC8DB865816",
-    },
+    other: { "msvalidate.01": "EBA7B657CA06A7CB9A8CEEC8DB865816" },
   },
 }
 
@@ -39,16 +36,13 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-XHTLGGYR9Q');
           `}
         </Script>
-
-        {/* ✅ OMG10 Script */}
-        <Script
-          src="https://omg10.com/4/10792090"
-          strategy="afterInteractive"
-        />
       </head>
 
       <body>
         {children}
+
+        {/* ✅ Display OMG10 ad safely at the bottom of all pages */}
+        <OMG10Ad />
       </body>
     </html>
   )
