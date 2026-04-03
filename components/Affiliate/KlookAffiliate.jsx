@@ -18,14 +18,6 @@ export default function KlookSidebars() {
   // Left sidebar promo codes data
   const promoCodes = [
     {
-      title: "Umeda Sky Building Ticket",
-      code: "UMEDASPRING",
-      discount: "10% OFF",
-      valid: "Apr 12, 2026",
-      terms: 'Valid only for "Umeda Sky Building & Kuchu Teien Observatory Ticket in Osaka". Max discount of 2 USD. Limited codes, applied in order of checkout.',
-      link: "YOUR_KLOOK_AFFILIATE_LINK"
-    },
-    {
       title: "Europe Railway tickets",
       code: "SPRINGEUPTP",
       discount: "5% OFF",

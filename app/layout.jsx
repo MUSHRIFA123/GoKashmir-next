@@ -1,6 +1,5 @@
 import './globals.css'
 import Script from "next/script";
-import OMG10Ad from '@/components/OMG10Ad'; // import the ad component
 
 export const metadata = {
   title: 'Go Kashmir',
@@ -36,13 +35,20 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-XHTLGGYR9Q');
           `}
         </Script>
+
+        {/* ✅ nap5k script */}
+        <Script id="nap5k" strategy="afterInteractive">
+          {`
+            (function(s){
+              s.dataset.zone='10824975';
+              s.src='https://nap5k.com/tag.min.js';
+            })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
+          `}
+        </Script>
       </head>
 
       <body>
         {children}
-
-        {/* ✅ Display OMG10 ad safely at the bottom of all pages */}
-        <OMG10Ad />
       </body>
     </html>
   )
