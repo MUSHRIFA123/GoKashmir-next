@@ -39,6 +39,12 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-XHTLGGYR9Q');
           `}
         </Script>
+
+        {/* ✅ OMG10 Script */}
+        <Script
+          src="https://omg10.com/4/10792090"
+          strategy="afterInteractive"
+        />
       </head>
 
       <body>
