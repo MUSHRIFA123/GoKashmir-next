@@ -48,29 +48,28 @@ export default function HomeHero() {
 
           {/* Text Content */}
           <div className="order-2 lg:order-1 flex flex-col justify-center items-center text-center">
-            <p className="text-3xl md:text-6xl font-bold text-orange-600">
-              Holi in Kashmir
-            </p>
+          <p className="text-3xl md:text-6xl font-bold text-yellow-500">
+            CSK vs Punjab
+          </p>
 
-            <p className="mt-4 text-sm md:text-lg max-w-md">
-              Experience the joy of Holi in the beautiful valleys of Kashmir.
-              Celebrate colours, culture and togetherness while exploring the
-              scenic charm of the region with GoKashmir.
-            </p>
+          <p className="mt-4 text-sm md:text-lg max-w-md">
+            Don’t miss today’s IPL clash between Chennai Super Kings and Punjab Kings! 
+            Get all match details, timings, venue info, and fan updates here.
+          </p>
 
-           <a
-              href="/holi-in-kashmir"
-              className="text-lg md:text-xl bg-green-600 text-white py-2 px-6 mt-8 hover:bg-green-700 transition inline-block"
-            >
-              Explore Holi in Kashmir
-            </a>
-          </div>
+          <a
+            href="ipl-2026"
+            className="text-lg md:text-xl bg-blue-600 text-white py-2 px-6 mt-8 hover:bg-blue-700 transition inline-block"
+          >
+            View Match Details
+          </a>
+        </div>
 
           {/* Image */}
           <div className="order-1 lg:order-2">
             <img
               className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-xl"
-              src="img/Homehero/occasions/holi-celebration.jpg"
+              src="/img/ipl/ipl-hero.png"
               alt="Holi celebration in Kashmir"
             />
           </div>
