@@ -49,11 +49,11 @@ export default function HomeHero() {
           {/* Text Content */}
           <div className="order-2 lg:order-1 flex flex-col justify-center items-center text-center">
           <p className="text-3xl md:text-6xl font-bold text-yellow-500">
-            CSK vs Punjab
+            KKR vs Punjab
           </p>
 
           <p className="mt-4 text-sm md:text-lg max-w-md">
-            Don’t miss today’s IPL clash between Chennai Super Kings and Punjab Kings! 
+            Don’t miss today’s IPL clash between Kolkatta Night Riders and Punjab Kings! 
             Get all match details, timings, venue info, and fan updates here.
           </p>
 
@@ -69,7 +69,7 @@ export default function HomeHero() {
           <div className="order-1 lg:order-2">
             <img
               className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-xl"
-              src="/img/ipl/ipl-hero.png"
+              src="/img/ipl/kkr-punjab.png"
               alt="Holi celebration in Kashmir"
             />
           </div>

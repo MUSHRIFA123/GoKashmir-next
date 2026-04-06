@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 
 export default function FanChallenge() {
   const [vote, setVote] = useState(null);
-  const [votes, setVotes] = useState({ csk: 0, punjab: 0 });
-  const [likes, setLikes] = useState({ csk: 0, punjab: 0 });
+  const [votes, setVotes] = useState({ kkr: 0, punjab: 0 });
+  const [likes, setLikes] = useState({ kkr: 0, punjab: 0 });
 
   // Fetch current votes/likes on load
   useEffect(() => {
@@ -22,7 +22,9 @@ export default function FanChallenge() {
     setVote(team);
     const res = await fetch("/api/ipl-vote", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({ type: "vote", team }),
     });
     const data = await res.json();
@@ -32,51 +34,72 @@ export default function FanChallenge() {
   const handleLike = async (team) => {
     const res = await fetch("/api/ipl-vote", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({ type: "like", team }),
     });
     const data = await res.json();
     setLikes(data.likes);
   };
 
-  const totalVotes = votes.csk + votes.punjab;
-  const percent = (team) => (totalVotes ? Math.round((votes[team] / totalVotes) * 100) : 0);
+  const totalVotes = votes.kkr + votes.punjab;
+
+  const percent = (team) =>
+    totalVotes
+      ? Math.round((votes[team] / totalVotes) * 100)
+      : 0;
 
   return (
     <section className="py-14 max-w-3xl mx-auto px-6 bg-yellow-50 rounded-xl shadow text-center">
-      <h2 className="text-3xl font-bold text-amber-600 mb-6">Fan Challenge: Who Will Win Today?</h2>
-      <p className="text-gray-700 mb-4">Cast your vote and show support for your favorite team!</p>
+      <h2 className="text-3xl font-bold text-amber-600 mb-6">
+        Fan Challenge: Who Will Win Today?
+      </h2>
 
+      <p className="text-gray-700 mb-4">
+        Cast your vote and show support for your favorite team!
+      </p>
+
+      {/* Vote Buttons */}
       <div className="flex justify-center gap-10 mb-6">
         <button
-          onClick={() => handleVote("csk")}
+          onClick={() => handleVote("kkr")}
           className={`px-6 py-3 rounded-xl font-semibold transition ${
-            vote === "csk" ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border border-emerald-600"
+            vote === "kkr"
+              ? "bg-purple-700 text-white"
+              : "bg-white text-purple-700 border border-purple-700"
           }`}
         >
-          CSK {vote === "csk" && "✓"}
+          KKR {vote === "kkr" && "✓"}
         </button>
+
         <button
           onClick={() => handleVote("punjab")}
           className={`px-6 py-3 rounded-xl font-semibold transition ${
-            vote === "punjab" ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border border-emerald-600"
+            vote === "punjab"
+              ? "bg-red-600 text-white"
+              : "bg-white text-red-600 border border-red-600"
           }`}
         >
           Punjab {vote === "punjab" && "✓"}
         </button>
       </div>
 
+      {/* Vote Percentage */}
       <p className="text-gray-700 mb-4">
-        {totalVotes > 0 && `Current Votes: CSK ${percent("csk")}% - Punjab ${percent("punjab")}%`}
+        {totalVotes > 0 &&
+          `Current Votes: KKR ${percent("kkr")}% - Punjab ${percent("punjab")}%`}
       </p>
 
+      {/* Like Buttons */}
       <div className="flex justify-center gap-10">
         <button
-          onClick={() => handleLike("csk")}
+          onClick={() => handleLike("kkr")}
           className="flex items-center gap-2 bg-white px-5 py-2 rounded-full shadow hover:bg-gray-100 transition"
         >
-          ❤️ CSK {likes.csk}
+          ❤️ KKR {likes.kkr}
         </button>
+
         <button
           onClick={() => handleLike("punjab")}
           className="flex items-center gap-2 bg-white px-5 py-2 rounded-full shadow hover:bg-gray-100 transition"
@@ -85,7 +108,12 @@ export default function FanChallenge() {
         </button>
       </div>
 
-      {vote && <p className="mt-4 text-gray-700">You voted for: <strong>{vote.toUpperCase()}</strong></p>}
+      {/* User Vote */}
+      {vote && (
+        <p className="mt-4 text-gray-700">
+          You voted for: <strong>{vote.toUpperCase()}</strong>
+        </p>
+      )}
     </section>
   );
 }
