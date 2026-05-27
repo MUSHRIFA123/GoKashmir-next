@@ -13,7 +13,6 @@ export default async function Home() {
     <>
       <Navbar/>
       <HomeHero/>
-            <KlookAffiliate />
       <HomepageVideos videos={videos} />
       <a
   href="https://omg10.com/4/10825004"
