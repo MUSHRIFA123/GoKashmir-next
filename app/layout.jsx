@@ -7,7 +7,6 @@ export const metadata = {
   icons: { icon: '/favicon.ico' },
   verification: {
     google: 'KbHGYyqwSZqkddVP5SKR1TO5DgHhvHM1dCk0A2q0WBc', 
-    other: { "msvalidate.01": "EBA7B657CA06A7CB9A8CEEC8DB865816" },
   },
 }
 
