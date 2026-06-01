@@ -43,39 +43,6 @@ export default function HomeHero() {
 
       {/* Best Destinations Section */}
       <BestDestination />
-       <section className="px-3 py-5 bg-neutral-100 lg:py-10">
-        <div className="grid lg:grid-cols-2 items-center justify-items-center gap-5">
-
-          {/* Text Content */}
-          <div className="order-2 lg:order-1 flex flex-col justify-center items-center text-center">
-          <p className="text-3xl md:text-6xl font-bold text-yellow-500">
-            KKR vs Punjab
-          </p>
-
-          <p className="mt-4 text-sm md:text-lg max-w-md">
-            Don’t miss today’s IPL clash between Kolkatta Night Riders and Punjab Kings! 
-            Get all match details, timings, venue info, and fan updates here.
-          </p>
-
-          <a
-            href="ipl-2026"
-            className="text-lg md:text-xl bg-blue-600 text-white py-2 px-6 mt-8 hover:bg-blue-700 transition inline-block"
-          >
-            View Match Details
-          </a>
-        </div>
-
-          {/* Image */}
-          <div className="order-1 lg:order-2">
-            <img
-              className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-xl"
-              src="/img/ipl/kkr-punjab.png"
-              alt="Holi celebration in Kashmir"
-            />
-          </div>
-
-        </div>
-      </section>
 
       {/* MENU / HERO CARDS SECTION */}
       <section className="menu py-10" id="menu">
